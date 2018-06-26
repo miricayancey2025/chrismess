@@ -11,7 +11,7 @@ The first project for Xtern botcamp 2018 session 3
 *add a form to the page
 add a text input to the form
 
-when form submitted update the headin with thte text that you type in tht text input
+when form submitted update the heading with the text that you type in tht text input
 
 ###Super Mega bonus credit Hyper Fighting
-*make sure it works whn yo press enter on the keyboard not just when you click the button
+*make sure it works when you press enter on the keyboard not just when you click the button
