@@ -41,7 +41,7 @@ const revealFavorite = function(){
         event.preventDefault()    
     }
     else if(fav === 'Evans'){
-        header.textContent = 'Favorite Chris is ' + fav + '. Boy is a real life cinnamon roll as a person. Making Mr.Rogers look like a gosh darn chump. Plus he IS Captain America, which doesn\'t\ compare to Thor but it\'s\ something. Would carry an old lady down the street.'
+        header.textContent = 'Favorite Chris is ' + fav + '. Boy is a real life cinnamon roll as a person. Making Mr.Rogers look like a gosh darn chump.'
         event.preventDefault()    
     }
     else{
