@@ -18,7 +18,6 @@ const revealFavorite = function(){
     const header = document.querySelector('.small')
     header.textContent = 'Favorite Chris is ' + fav
         event.preventDefault()
-        
 }
 
 button2.addEventListener('click',updateHeading2)
