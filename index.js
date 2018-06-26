@@ -7,10 +7,10 @@ const button3 = document.querySelector('.button2')
 //and changing the heading content to a new messagge
 const updateText = function () { 
 const heading = document.querySelector('h1')
-heading.textContent = 'IT\'s\ bout to be a party!!'
+heading.textContent = 'What a mess of Chrisses....'
 }
 
-//udate heading 2 skips the heading in between after chrissmess because that's an h2 (because I can)
+//update heading 2 skips the heading in between after chrissmess because that's an h2 (because I can)
 //and instead gets only the second heading which I've geniously called heading
 //query selector change text content
 const updateHeading2 = function(){
