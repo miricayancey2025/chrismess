@@ -37,7 +37,7 @@ const revealFavorite = function(){
         event.preventDefault()    
     }
     else if(fav === 'Pratt'){
-        header.textContent = 'Favorite Chris is ' + fav + '. AS IT SHOULD BE. You will never find a funnier or more wholesome Chris. (We do not include Chris Evans).'
+        header.textContent = 'Favorite Chris is ' + fav + '. AS IT SHOULD BE. You will never find a funnier or more wholesome Chris. This is a Chris with love and humor in his heart with a pure soul!!'
         event.preventDefault()    
     }
     else if(fav === 'Evans'){
