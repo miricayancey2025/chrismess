@@ -6,29 +6,45 @@
     <title>CHRIS MESS - A whole mess of Chrisses</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <link href="https://fonts.googleapis.com/css?family=Markazi+Text" rel="stylesheet">
 
 </head>
 <body>
-    <h1>ChrisMESS</h1>
-    <h2 class='small'>The Holy Trinity of Chrisses</h2>
+    <header>
+      <h1 id= "mess" >ChrisMESS</h1>   
+    </header>
+ 
+    <h2 class='small' style='font-size: 2rem'>The Holy Trinity of Chrisses</h2>
     <h1 class='heading'>Chris Pratt (the Superior Chris), Chris Hemsworth, Chris Evans and the Lesser Chris Who Shall Not Be Named</h1>
     <h1>This webpage is dedicated to the absolute mess that is the collective Chris body of Chrisses</h1>
    <br><br>
     <button>Update Heading!!</button>
     <button class = 'button'> Find out who the lesser Chris is!!</button>
    <br><br>
+
+
     <h3> Name your favorite Chris!!</h3>
+    <div>
     <form id="favorite">
     <input type = 'text' id='favChris' class ='form' name = 'chris_name'autofocus>
    <button class = 'button2'>Submit</button>
     </form>
+    </div>
+
     <br><br><br>
+
+
     <h3> Name your favorite Chris Movie!!</h3>
     <form id="movieForm">
+        <div>
     <input type = 'text' placeholder="Please enter movie name" id="movie_name" class="movie">
     <input type = 'text' placeholder="Please enter a Chris" id="chris_name" class="movie_star" >
-   <button class = 'button3'>Submit</button>
+   <input type = 'submit' class = 'button3'>
+   </div>
     </form>
+
+
+    <br>
     <div id="flicks"></div>
     <br><br><br><br><br>
     <script src="index.js"></script>
