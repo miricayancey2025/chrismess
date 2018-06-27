@@ -1,14 +1,13 @@
 const form = document.querySelector('form')
 const movieForm = function(ev){
     ev.preventDefault()
-    const fav_input = document.querySelector('input').value
-    const header = document.querySelector('.small')
-    const list = document.querySelector('#flicks')
-    header.textContent = 'Favorite Chris is ' + fav_input
-    let item = document.createElement('li')
-    item.textContent = fav_input
-    list.appendChild(item)
+    const movie = document.querySelector('#movie_name').value // takes value of movie name
+    const chris = document.querySelector('#chris_name').value // takes value of chris name
+    const movie_list = document.querySelector('#flicks') //finds div
+    let item = document.createElement('li') //creates element
+    item.textContent = movie + " starring " + chris // updates text to be added to element
+    movie_list.appendChild(item) //adds updated element to div
     form.reset()
 }
 
-form.addEventListener('submit',moveiForm)
+form.addEventListener('submit',movieForm)
