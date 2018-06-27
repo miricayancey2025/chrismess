@@ -7,13 +7,15 @@ const movieForm = function(ev){
     const movie_list = document.createElement('li') //creates list element
     const span = document.createElement('span') //creates span form movie title
     const span2 = document.createElement('span')//creates span for chris name
+
     span.setAttribute('class', 'movie_element') //sets attribute for movie title
     span2.setAttribute('class', 'name_element')//sets attributes for chris name
-    span.innerHTML = movie //sets innerhtml of first span to movie
-    span2.innerHTML = " starring " + chris //sets innerhtml of second span to chris
+    span.textContent = movie //sets innerhtml of first span to movie
+    span2.textContent = " starring " + chris //sets innerhtml of second span to chris
+
+
     movie_list.appendChild(span) //appends that to a movie list
     movie_list.appendChild(span2)//appends that to a movie list
-    //by using the appends with the innerHTML should not be able to hack
     movie_div.appendChild(movie_list) //appends that list item into the div
     form.reset()
 }
