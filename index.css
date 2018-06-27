@@ -5,11 +5,11 @@ h1{
     color: goldenrod;
 }
 h2,h3{
+    color: rgb(13, 122, 150);
+}
+.movie_element{
     color: purple;
 }
-.movie_star{
-    color: orangered;
-}
-.movie{
-    color: blue;
+.name_element{
+    color: rgb(17, 146, 5);
 }
