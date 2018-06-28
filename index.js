@@ -1,4 +1,3 @@
-
 ///unaffected extra mess
 const button = document.querySelector('Button')
 const button2 = document.querySelector('.button')
@@ -40,11 +39,16 @@ button2.addEventListener('click',updateHeading2)
 button.addEventListener('click', updateText)
 button3.addEventListener('click',revealFavorite)
 //END of unaffected extra mess
-const movie_list = []
+
+
+
+
+
+
 class App{
     constructor(){
         const form = document.querySelector('form#movieForm')
-        
+        this.arr =[]
         form.addEventListener('submit',(ev) =>{//arrows are functions now
             ev.preventDefault()
             this.submitForm(ev)
@@ -74,31 +78,39 @@ renderItem(movie){
         item.appendChild(span)
         item.appendChild(check)    
     })
-    return item;
-}
-
-/////////////////////////////////////////
-submitForm(ev){
-    const f = ev.target
-
-    const movie = {
-        movie_name:  f.title.value + ' starring ',
-        chris_name: f.cast.value,
-    }
-    const item = this.renderItem(movie)
     const delete_btm = document.createElement('button')
     delete_btm.classList.add('delete')
     delete_btm.textContent = 'x'
     item.appendChild(delete_btm)
-    const deleteIt = function(){
-        this.parentNode.remove()
-        }
-    delete_btm.addEventListener('click', deleteIt)
-    movie_list.push(item)
+    delete_btm.addEventListener('click', () => this.deleteIt(movie, item))
+
+   this.arr.push(item)
+   console.log(this.arr)
+    return item;
+}
+///////////////////////////////
+deleteIt(movie, item){
+    this.list.removeChild(item)
+    let i = this.arr.indexOf(movie)
+    this.arr.splice(i, 1)
+    console.log(this.arr)
+ 
+    
+    }
+/////////////////////////////////////////
+submitForm(ev){
+    const f = ev.target
     const list = document.querySelector('#movie_ul')
+    const movie = {
+        movie_name:  f.title.value + ' starring ',
+        chris_name: f.cast.value,
+        favorite: false,
+    }
+    const item = this.renderItem(movie)
+
+ 
     list.appendChild(item) //appends that list item into the div
     f.reset()
     f.title.focus()
-}
-}// end of clas encapsulation
+}}// end of clas encapsulation
 const app = new App()

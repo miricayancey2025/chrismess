@@ -44,14 +44,14 @@ input[type=submit]{
     border:none;
     margin: 2px;
 }
-.favorite{
+#fav{
     background-color: palevioletred;
     border-radius: .15rem;
     border:none;
     margin:2px;
 }
 #mess{
-    font-size: 10vw;
+    font-size: 5vw;
     text-align: center;
 }
 .small{
@@ -60,7 +60,7 @@ input[type=submit]{
 header{
     background-image: url(pratt.jpg);
     background-size: contain;
-    height: 34vw;
+    height: 15vw;
     margin: 0;
     border: .5rem 
 }
