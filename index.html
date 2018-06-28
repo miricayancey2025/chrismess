@@ -18,8 +18,8 @@
     <h1 class='heading'>Chris Pratt (the Superior Chris), Chris Hemsworth, Chris Evans and the Lesser Chris Who Shall Not Be Named</h1>
     <h1>This webpage is dedicated to the absolute mess that is the collective Chris body of Chrisses</h1>
    <br><br>
-    <button>Update Heading!!</button>
-    <button class = 'button'> Find out who the lesser Chris is!!</button>
+    <button id='regs'>Update Heading!!</button>
+    <button class = 'button' id='regs'> Find out who the lesser Chris is!!</button>
    <br><br>
 
 
@@ -27,7 +27,7 @@
     <div>
     <form id="favorite">
     <input type = 'text' id='favChris' class ='form' name = 'chris_name'autofocus>
-   <button class = 'button2'>Submit</button>
+   <button class = 'button2' id='regs'>Submit</button>
     </form>
     </div>
 
@@ -37,15 +37,15 @@
     <h3> Name your favorite Chris Movie!!</h3>
     <form id="movieForm">
         <div>
-    <input type = 'text' placeholder="Please enter movie name" id="movie_name" class="movie">
-    <input type = 'text' placeholder="Please enter a Chris" id="chris_name" class="movie_star" >
+    <input type = 'text' placeholder="Please enter movie name" id="movie_name" name="title" class="movie">
+    <input type = 'text' placeholder="Please enter a Chris" id="chris_name" name="cast"class="movie_star" >
    <input type = 'submit' class = 'button3'>
    </div>
     </form>
 
 
     <br>
-    <div id="flicks"></div>
+    <ul id="movie_ul"></ul>
     <br><br><br><br><br>
     <script src="index.js"></script>
 </body>

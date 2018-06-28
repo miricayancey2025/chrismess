@@ -26,7 +26,7 @@ input[type=submit]{
     border: .15rem solid grey;
     width: 60%;
 }
-button{
+#regs{
     background-color: green;
     border-radius: .25rem;
     color: white;
@@ -35,6 +35,20 @@ button{
     margin: 1rem 1rem;
     width: 50%;
     text-align: center;
+}
+.delete{
+    background-color:wheat;
+    width:18px;
+    height:18px;
+    border-radius: .15rem;
+    border:none;
+    margin: 2px;
+}
+.favorite{
+    background-color: palevioletred;
+    border-radius: .15rem;
+    border:none;
+    margin:2px;
 }
 #mess{
     font-size: 10vw;
@@ -52,13 +66,13 @@ header{
 }
 .movie_element{
     font-family: 'Markazi Text', serif;
-    font-size: 3rem;
+    font-size: 20px;
     color: purple;
 }
 .name_element{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: rgb(17, 146, 5);
-    font-size: 3rem;
+    font-size: 20px;
 }
 #movie_name{
     color:orchid;
