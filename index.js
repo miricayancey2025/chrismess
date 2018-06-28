@@ -49,6 +49,7 @@ class App{
     constructor(){
         const form = document.querySelector('form#movieForm')
         this.arr =[]
+        this.list = document.querySelector('#movie_ul')
         form.addEventListener('submit',(ev) =>{//arrows are functions now
             ev.preventDefault()
             this.submitForm(ev)
@@ -66,50 +67,47 @@ renderProperty(name, value){
 /////////////////////////////////////////
 renderItem(movie){
     const item = document.createElement('ul')
-    const check = document.createElement('button')
-    check.classList.add('favorite')
-    check.textContent = "Fav"
-    check.addEventListener('click', function(){check.textContent = 'Favorted!'})
-
     item.classList.add('movie')
     const props = Object.keys(movie)
+
+    ///adds favorite button
+    const fav_btn = document.createElement('button')
+    fav_btn.textContent = 'Favorite!'
+    fav_btn.addEventListener('click', (ev) => this.fav(movie))
+  
+    //adds span property
     props.forEach((propertyName)=>{
         const span = this.renderProperty(propertyName, movie[propertyName])
         item.appendChild(span)
-        item.appendChild(check)    
+        item.appendChild(fav_btn)
     })
+
+    //creates and adds button and adds event handler
     const delete_btm = document.createElement('button')
     delete_btm.classList.add('delete')
     delete_btm.textContent = 'x'
+    delete_btm.addEventListener('click', (ev) => this.deleteIt(movie,item) )
     item.appendChild(delete_btm)
-    delete_btm.addEventListener('click', () => this.deleteIt(movie, item))
-
-   this.arr.push(item)
    console.log(this.arr)
     return item;
 }
 ///////////////////////////////
-deleteIt(movie, item){
+deleteIt(movie,item){
     this.list.removeChild(item)
-    let i = this.arr.indexOf(movie)
-    this.arr.splice(i, 1)
-    console.log(this.arr)
- 
-    
++    this.arr.splice(this.arr.indexOf(movie), 1)
     }
+
 /////////////////////////////////////////
 submitForm(ev){
     const f = ev.target
-    const list = document.querySelector('#movie_ul')
     const movie = {
         movie_name:  f.title.value + ' starring ',
         chris_name: f.cast.value,
-        favorite: false,
+        favorite: 'Favorite!'
     }
+    this.arr.push(movie)
     const item = this.renderItem(movie)
-
- 
-    list.appendChild(item) //appends that list item into the div
+    this.list.appendChild(item) //appends that list item into the div
     f.reset()
     f.title.focus()
 }}// end of clas encapsulation
