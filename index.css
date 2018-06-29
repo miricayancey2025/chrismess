@@ -1,15 +1,47 @@
 body{
     font-family: 'Markazi Text', serif;
-    background-color: wheat;
+    background: repeating-linear-gradient(
+    to right,
+    #c1e0ee,
+    #c1e0ee 50px,
+    #c1e0ee 50px,
+    #c1e0ee 50px
+);
 }
 h1{
     margin:0;
-    color: green;
+    color:black;
     margin: .5rem;
+    text-align: center;
+    
+}
+header{
+    background-image: url(write1.png);
+    background-size: cover;
+    height: 40vw;
+    font-size: 70px;
+    color: white;
+    border: solid white 0.5rem;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
 }
 form{
     text-align: center;
     box-sizing: border-box;
+}
+#for_auto{
+    border: 3px solid black;
+    border-radius: 3px;
+}
+#for_save{
+    font-size: 25px;
+}
+ul { background:white; }
+ul:nth-child(odd) { background: rgb(2, 10, 8); 
+color:white;
 }
 input[type=text]{
     width:30%;
@@ -19,70 +51,51 @@ input[type=text]{
     border: .15rem solid ghostwhite;
 }
 input[type=submit]{
-    background-color: green;
-    border-radius: .25rem;
+    background-color: black;
+    border: none;
     color: white;
-    padding: 1rem .5rem;
-    border: .15rem solid grey;
+    padding: 1.25rem .05rem;
+    margin: 1rem 1rem;
+    border-radius:5px;
     width:30%;
 }
-#regs{
-    background-color: green;
-    border-radius: .25rem;
+.reg_button{
+    background-color: black;
+    border: none;
     color: white;
     padding: 1.25rem .05rem;
     border: none;
     margin: 1rem 1rem;
     width: 20%;
+    border-radius:3px;
     text-align: center;
+    
 }
-.delete{
-    background-color:wheat;
-    width:18px;
-    height:18px;
-    border-radius: .15rem;
+button.delete {
+    background-color: black;
+    color: white;
+border:none;
+margin:1px;
+    border-radius: 5px;
+  }
+  button.delete:hover {
+    border-radius: 5px;
     border:none;
-    margin: 2px;
-}
-#fav{
-    background-color: palevioletred;
-    border-radius: .15rem;
+    margin:1px;
+    background-color: black;
+  }
+  
+  button.fav {
+    background-color: black;
+    color:white;
     border:none;
-    margin:2px;
-}
-#mess{
-    font-size: 5vw;
-    text-align: center;
-}
-.small{
-    text-align: center;
-}
-header{
-    background-image: url(pratt.jpg);
-    background-size: contain;
-    height: 15vw;
-    margin: 0;
-    border: .5rem 
-}
-.movie_element{
-    font-family: 'Markazi Text', serif;
-    font-size: 20px;
-    color: purple;
-}
-.name_element{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: rgb(17, 146, 5);
-    font-size: 20px;
-}
-#movie_name{
-    color:orchid;
-}
-#chris_name{
-    color:saddlebrown;
-}
-#favChris{
-    color: navy;
-}
-#movieForm{
-    margin: 1rem;
-}
+    margin:1px;
+    border-radius: 5px;
+  }
+  button.fav:hover {
+    background-color:black;
+    color:white;
+    border:none;
+    margin:1px;
+    border-radius: 5px;
+  }
