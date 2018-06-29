@@ -41,18 +41,15 @@ class App{
             'Eyes that green were definitely dangerous.','"Where did you come from?”','It was too damn quiet.',
             'It didn’t take long to realize that, once they found the body, I was going to be suspect number one.',
             'Chris woke to the sound of crying. It was 3 o’clock in the morning and he’d been alone when he went to bed.',
-            'I can’t help it. I lie. All the time.',
             'The first thing that went through my head was “she’s a witch!” from that Monty Python movie.',
             'Manipulating people is so easy I almost stopped doing it. Almost.',
-            'They thought it would kill you. I knew it wouldnt.','Wyn swindled the Magnificent Seven','The day the virus struck..',
+            "They thought it would kill you. I knew it wouldn't.",'Wyn swindled the Magnificent Seven','The day the virus struck..',
             'Look, you didn’t hear this story from me, alright? I never opened my trap and breathed a word toyou, understand? Now that that’s clear, listen, it wasn’t an accident. You hear me? It wasn’t an accident.',
             '“It was a freezing night in Hell when I met your mother."',
             'It was a foggy morning in Cleveland when Dad got arrested. Mom wasted no time packing us up and shipping us to the middle of nowhere, United States, tersely saying that Dad had finally done it. He’d picked the last nerve the police had for him clean.',
             'Devoss calmly brushed a hand down his blood-speckled shirt',
             'The last time Embry went outside was two months and three days ago.',
-            'Blood doesnt taste good.','Once Upon A Time there was a girl made of stars.','Sometimes it takes a Villain to make a Hero.','She wished to be mighty. He couldnt deny her of anything.',
-            "Sweetheart, when you're scared, I beg of you, don't scream. Hunt.",
-            "HE SAID THAT HE LOVED ME.","It's a big bad world out there, boy. I'm here to keep you safe. Take my hand in yours and I'll be your KNIGHTinggale girl.",
+            'Blood doesnt taste good.','Once Upon A Time there was a girl made of stars.','Sometimes it takes a Villain to make a Hero.',"She wished to be mighty. He couldn't deny her of anything.",
         ]
         this.list = document.querySelector('#for_save')
         gen_btn.addEventListener('click', (ev) =>{
